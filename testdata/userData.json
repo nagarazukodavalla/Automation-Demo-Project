@@ -1,0 +1,12 @@
+{
+  "createUser": {
+    "validUser": {
+      "name": "Nagaraju Kodavalla",
+      "job": "Test Architect"
+    },
+    "anotherUser": {
+      "name": "John Smith",
+      "job": "QA Engineer"
+    }
+  }
+}
