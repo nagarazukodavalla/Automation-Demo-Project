@@ -1,0 +1,1 @@
+[{"uid":"7fa4d459bc614bf6","name":"Get User API - validate response","time":{"start":1792584393836,"stop":1792584398981,"duration":5145},"status":"passed","severity":"normal"},{"uid":"e26ace02a87faa80","name":"Authenticate and save session","time":{"start":1792584374413,"stop":1792584392378,"duration":17965},"status":"passed","severity":"normal"}]

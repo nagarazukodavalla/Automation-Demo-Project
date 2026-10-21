@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import testdata from "../../testdata/userData.json" with { type: "json" };
+import testdata from "../../test-data/userData.json" with { type: "json" };
 
 test("POST - create user", async ({ request }) => {
   const requestBody = {

@@ -1,0 +1,68 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UI_Automation\auth.setup.ts >> Authenticate and save session
+- Location: tests\UI_Automation\auth.setup.ts:11:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /\/web\/index\.php\/dashboard\/index$/
+Received string:  ""
+Timeout: 5000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 5000ms
+
+```
+
+# Test source
+
+```ts
+  1  | import { test as setup, expect } from "@playwright/test";
+  2  | import userData from "../../test-data/userData.json" with { type: "json" };
+  3  | const authFile = "playwright/.auth/user.json";
+  4  | 
+  5  | //LoginPage Locators
+  6  | const userName: string = "username";
+  7  | const password: string = "password";
+  8  | const loginSubmit: string = "button[type = 'submit']";
+  9  | const dashBoardUrl: RegExp = /\/web\/index\.php\/dashboard\/index$/;
+  10 | 
+  11 | setup("Authenticate and save session", async ({ page }) => {
+  12 |   await page.goto(
+  13 |     "/web/index.php/auth/login",
+  14 | 
+  15 |     {
+  16 |       waitUntil: "domcontentloaded",
+  17 |       timeout: 30000,
+  18 |     },
+  19 |   );
+  20 | 
+  21 |   await page
+  22 |     .getByRole("textbox", { name: userName })
+  23 |     .fill(userData.validUser.username);
+  24 |   await page
+  25 |     .getByRole("textbox", { name: password })
+  26 |     .fill(userData.validUser.password);
+  27 | 
+  28 |   await page.locator(loginSubmit).click();
+  29 | 
+> 30 |   await expect(page).toHaveURL(dashBoardUrl);
+     |                      ^ Error: expect(page).toHaveURL(expected) failed
+  31 | 
+  32 |   await page.context().storageState({ path: authFile });
+  33 | });
+  34 | 
+```

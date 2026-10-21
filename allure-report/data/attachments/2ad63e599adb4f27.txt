@@ -1,0 +1,26 @@
+User response APIResponse: 200 OK
+  Date: Wed, 21 Oct 2026 12:06:38 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  access-control-allow-credentials: true
+  Cache-Control: max-age=43200
+  etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+  expires: -1
+  pragma: no-cache
+  vary: Origin, Accept-Encoding
+  x-content-type-options: nosniff
+  x-powered-by: Express
+  x-ratelimit-limit: 3600000
+  x-ratelimit-remaining: 3599999
+  x-ratelimit-reset: 1790812826
+  Age: 20617
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UpHXVw%2B78RCfTM%2Bd3LX0cVQ5jVcD8KsCvkSiVIzBvmgS8OdH7Yr9UuYCPjn8vjNgbrCvl%2FMGN2Lr1lR7La8eGsX4uM6IVw0kPlw0y8wHqW%2FgqZvM82raLoO%2BBSaW09gMKT%2BMLvx0vyVr0iAD3QJD"}]}
+  cf-cache-status: HIT
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Content-Encoding: br
+  Server: cloudflare
+  CF-RAY: a4e0232d0cb0b8bf-BOM
+  alt-svc: h3=":443"; ma=86400
+user name Leanne Graham
+user email Sincere@april.biz
